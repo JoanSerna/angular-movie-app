@@ -18,7 +18,7 @@ export class MovieItemComponent implements OnInit {
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {}
-  redirect(imdbID: number): void {
+  redirect(imdbID: string): void {
     this.router.navigate([`detail/${imdbID}`], {
       relativeTo: this.activatedRoute,
     });

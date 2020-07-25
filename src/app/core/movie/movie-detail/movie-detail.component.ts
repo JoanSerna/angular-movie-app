@@ -18,7 +18,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MovieDetailComponent implements OnInit {
-  movie$: Observable<Movie > = of();
+  movie$: Observable<Movie | null> = of();
   constructor(
     private activatedRoute: ActivatedRoute,
     private store: Store<AppState>
