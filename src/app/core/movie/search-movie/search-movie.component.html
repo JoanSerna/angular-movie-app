@@ -1,0 +1,9 @@
+<form (submit)="onSearchMovie()" [formGroup]="formSearchMovie">
+  <mat-form-field class="mx-1">
+    <mat-label>Search Movie</mat-label>
+    <input type="search" matInput placeholder="Spiderman" formControlName="movie">
+  </mat-form-field>
+  <button type="submit" mat-mini-fab color="primary" class="mx-1">
+    <mat-icon>search</mat-icon>
+  </button>
+</form>

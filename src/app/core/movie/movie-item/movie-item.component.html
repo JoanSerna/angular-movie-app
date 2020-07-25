@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title (click)="redirect(movie.imdbID)" class="pointer">{{movie.Title}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="movie.Poster" [alt]="movie.Title" class="w-full mx-auto" />
+  <mat-card-content>
+    <p>({{movie.Year}})</p>
+  </mat-card-content>
+</mat-card>

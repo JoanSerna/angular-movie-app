@@ -1,0 +1,22 @@
+<joanserna-toolbar></joanserna-toolbar>
+<section class="container">
+  <mat-card *ngIf="movie$ | async as movie" class="w-50 mx-auto my-1">
+    <mat-card-header>
+      <mat-card-title>{{movie.Title}}</mat-card-title>
+      <mat-card-subtitle>{{movie.Runtime}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="d-flex">
+      <img [src]="movie.Poster" [alt]="movie.Title" class="" width="300" />
+      <div class="px-1">
+        <p>{{movie.Plot}}</p>
+        <p>{{movie.Production}}</p>
+        <p>{{movie.Awards}}</p>
+        <p>{{movie.Released}}</p>
+        <p>{{movie.imdbRating}}</p>
+        <p>({{movie.Year}})</p>
+
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</section>

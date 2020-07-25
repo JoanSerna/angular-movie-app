@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.m-0 {
+  margin: 0;
+}
+.px-1 {
+  padding: 0 1rem;
+}
+.white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.w-full {
+  max-width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+/* Override Angular Material Margins */
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.d-block {
+  display: block;
+}
+/* Override Angular Material Display Card */
+.d-flex {
+  display: flex !important;
+}
+.d-grid {
+  display: grid;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-auto-rows {
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+.grid-gap-1 {
+  gap: 1rem;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+/* Override Angular Material Typography Margins */
+.my-1 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.pointer {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 720px) {
+  .md-grid-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .md-m-w-50 {
+    max-width: 50%;
+  }
+}
