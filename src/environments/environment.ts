@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiKey: 'f55ee2e0',
-  endPoint: 'http://www.omdbapi.com/',
+  endPoint: 'https://www.omdbapi.com/',
 };
 
 /*
