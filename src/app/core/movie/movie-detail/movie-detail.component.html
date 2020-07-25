@@ -5,9 +5,9 @@
       <mat-card-title>{{movie.Title}}</mat-card-title>
       <mat-card-subtitle>{{movie.Runtime}}</mat-card-subtitle>
     </mat-card-header>
-    <mat-card-content class="d-flex">
-      <img [src]="movie.Poster" [alt]="movie.Title" class="" width="300" />
-      <div class="px-1">
+    <mat-card-content class="d-flex card-mobile">
+      <img [src]="movie.Poster" [alt]="movie.Title" class="w-full md-w-300" />
+      <div class="px-1 my-1">
         <p>{{movie.Plot}}</p>
         <p>{{movie.Production}}</p>
         <p>{{movie.Awards}}</p>
